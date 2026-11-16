@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments - Beauty Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>🌸 Beauty Clinic</h2>
+
+        <div class="nav-links">
+            <a href="booking.html">Booking</a>
+            <a href="appointments.html">My Appointments</a>
+        </div>
+    </nav>
+
+    <!-- Appointments Section -->
+    <section class="appointments-container">
+
+        <h1>My Appointments</h1>
+        <p class="subtitle">Track your booked appointments</p>
+
+        <div class="appointments-table">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Doctor</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="appointmentsList">
+                    <!-- JavaScript will add appointments here -->
+                </tbody>
+            </table>
+
+            <div id="emptyMessage">
+                No appointments found 🌸
+            </div>
+
+        </div>
+
+        <a href="booking.html" class="main-btn new-booking">
+            + Book New Appointment
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

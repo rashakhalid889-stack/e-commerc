@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Beauty Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>🌸 Beauty Clinic</h2>
+
+        <div class="nav-links">
+            <a href="booking.html">Booking</a>
+            <a href="appointments.html">My Appointments</a>
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <section class="booking-container">
+
+        <div class="booking-image">
+            <h2>Your Beauty Journey Starts Here</h2>
+            <p>Book your appointment and let us take care of you.</p>
+            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600"
+                 alt="Beauty Clinic">
+        </div>
+
+        <div class="booking-form">
+
+            <h1>Book Your Appointment</h1>
+            <p class="subtitle">Choose your service and preferred time</p>
+
+            <form id="bookingForm">
+
+                <label>Full Name</label>
+                <input type="text" id="customerName"
+                       placeholder="Enter your name" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone"
+                       placeholder="Enter your phone" required>
+
+                <label>Select Service</label>
+                <select id="service" required>
+                    <option value="">Choose Service</option>
+                    <option value="Facial Care">Facial Care - 800 EGP</option>
+                    <option value="Body Care">Body Care - 1000 EGP</option>
+                    <option value="Hair Care">Hair Care - 700 EGP</option>
+                    <option value="Laser">Laser - 1200 EGP</option>
+                    <option value="Skin Treatment">Skin Treatment - 900 EGP</option>
+                </select>
+
+                <label>Choose Doctor</label>
+                <select id="doctor" required>
+                    <option value="">Select Doctor</option>
+                    <option value="Dr. Mona Ahmed">Dr. Mona Ahmed</option>
+                    <option value="Dr. Sara Ibrahim">Dr. Sara Ibrahim</option>
+                    <option value="Dr. Ahmed Hassan">Dr. Ahmed Hassan</option>
+                </select>
+
+                <label>Select Date</label>
+                <input type="date" id="date" required>
+
+                <label>Select Time</label>
+                <select id="time" required>
+                    <option value="">Choose Time</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                    <option value="06:00 PM">06:00 PM</option>
+                </select>
+
+                <button type="submit" class="main-btn">
+                    Confirm Booking
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
